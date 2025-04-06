@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boilerplate Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script><script language='javascript' async='true' type='text/javascript' src='https://cdn.whatfix.com/prod/e2a25cd4-317d-49da-a5de-196716928291/initiator/initiator.nocache.js'></script>
+    <script defer src="script.js"></script>
+    <script language='javascript' async='true' type='text/javascript' src='https://cdn.whatfix.com/prod/e2a25cd4-317d-49da-a5de-196716928291/initiator/initiator.nocache.js'></script>
+    <script>
+        // Navigation handler script - opens About page in new tab
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the About link from navigation
+            const aboutLink = document.querySelector('nav ul li a[href="#about"]');
+            
+            // Change the behavior of the About link
+            if (aboutLink) {
+                // Override the default behavior
+                aboutLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default anchor behavior
+                    
+                    // Open about.html in a new tab/window
+                    window.open('about.html', '_blank');
+                });
+            }
+        });
+    </script>
 </head>
 
 <body>
