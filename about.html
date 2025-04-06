@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Boilerplate Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* Additional styles for the About page */
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .team-member {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 3px solid #333;
+        }
+        
+        .return-home {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .return-home:hover {
+            background-color: #555;
+        }
+
+        .page-title {
+            font-size: 1.8em;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <h2 class="page-title">About Our Team</h2>
+                <p>We are a passionate team of developers dedicated to creating innovative solutions for the web. Our collective experience spans multiple disciplines including front-end development, back-end architecture, and user experience design.</p>
+                
+                <h3>Our Mission</h3>
+                <p>To build digital experiences that are accessible, performant, and delightful to use. We believe in writing clean, maintainable code that stands the test of time.</p>
+                
+                <h3>Meet The Team</h3>
+                
+                <div class="team-member">
+                    <h4>Jane Doe</h4>
+                    <p><strong>Role:</strong> Lead Developer</p>
+                    <p>Jane has over 10 years of experience in web development and specializes in creating responsive, accessible interfaces.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h4>John Smith</h4>
+                    <p><strong>Role:</strong> Backend Engineer</p>
+                    <p>John is our database expert, ensuring our applications are performant and secure.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h4>Alex Johnson</h4>
+                    <p><strong>Role:</strong> UX Designer</p>
+                    <p>Alex brings our ideas to life with beautiful, intuitive designs that put users first.</p>
+                </div>
+                
+                <a href="index.html" class="return-home">Return to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Boilerplate Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
